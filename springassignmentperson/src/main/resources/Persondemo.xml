@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <!-- StudentDTO s=new StudentDTO();
+    s,setId(11);
+    s.setName("Raja");
+    s.setRollNo("S12"); -->
+
+<bean id="s" class="com.xworkz.Person">
+<!-- setter injection(string ,int type) example ,one class one bean -->
+<property name="id" value="1"></property>
+<property name="name" value="Raja"></property>
+<property name="car"></property>
+</bean>
+
+<bean id="v" class="com.xworkz.Car">
+<property name="id" value="1"></property>
+<property name="name" value="maruti"></property>
+<property name="model"  value="i20"></property>
+<property name="price" value="800000"></property>
+</bean>
+
+</beans>

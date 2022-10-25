@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<context:annotation-config></context:annotation-config>
+<bean id="c" class="springAutowireAnnotationWithXML.Car"/>  <!-- no string,int value in car so no property tag so closed bean tag -->
+<bean id="i20" class="springAutowireAnnotationWithXML.Engine">
+<property name="model" value="2022"></property>
+<property name="horsePower" value="65000"></property>
+</bean>
+
+<bean id="bmw" class="springAutowireAnnotationWithXML.Engine">
+<property name="model" value="2017"></property>
+<property name="horsePower" value="30000"></property>
+</bean>
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id="job" class="DP.Job" >
+<property name="design" value="Software Engineer"></property>
+</bean>
+<bean id="Vandana" class="DP.Me" autowire="byType"><!-- byName,byType,default -->
+<property name="name" value="vandana"></property>
+<property name="listOfIds" ><list>  <!-- collection type reference -->
+<value>123456</value>
+<value>234546</value></list></property>
+<!--  <property name="b" ref="job"></property>-->
+<!-- ref must be same as id of job class- ref attribute is to define class type references so we need to give reference bean id to ref attribute -->
+</bean>
+</beans>

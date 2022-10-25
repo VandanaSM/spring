@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <!-- StudentDTO s=new StudentDTO();
+    s,setId(11);
+    s.setName("Raja");
+    s.setRollNo("S12");
+    
+    beans -list of objects 
+    bean-object 
+    Airtel air=new Airtel();
+    air.calling();
+    air.data();-->
+
+<bean id="sim" class="Ioc.Airtel"/> <!-- cannot create object of Sim interface ,if properties present in classes then only give property tag -->
+
+</beans>
